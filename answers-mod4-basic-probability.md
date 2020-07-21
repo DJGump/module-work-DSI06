@@ -30,7 +30,7 @@ p(crash n travel) = p(crash) * p(travel)
 
 ## 4: A data scientist wants to study the behavior of users on the company website. Each time a user clicks on a link on the website, there is a 5% chance that the user will be asked to complete a short survey about their behavior on the website. The data scientist uses the survey data to conclude that, on average, users spend 15 minutes surfing the company website before moving on to other things. What is wrong with this conclusion?
 
-A: This conclusion is based on a non-representative sample. The sample is convenient, because only people who choose to fill out the survey generate data. It is reasonable to say that most people will choose not to reply to the survey, and that only the most enthusiastic users, who are also likely to spend more time on the site, will complete the survey. A more accurate conclusion would be that for users who complete the survey, their average time spent surfing is 15 minutes. 
+A: This conclusion is based on a non-representative sample. The sample is convenient, because only people who choose to fill out the survey generate data. It is reasonable to say that most people will choose not to reply to the survey, and that only the most enthusiastic users, who are also likely to spend more time on the site, will complete the survey (and more likely to get the survey). A more accurate conclusion would be that for users who complete the survey, their average time spent surfing is 15 minutes. 
 
 # Drill Set 2
 
