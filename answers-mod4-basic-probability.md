@@ -5,17 +5,17 @@
 p(H) = 0.5\
 p(T) = 0.5
 
-p(HTTH) = 0.5 * 0.5 * 0.5 *0.5
-    = 0.0625
-p(HHHH) = 0.5 * 0.5 * 0.5 *0.5
-    = 0.0625
-p(TTHH) = 0.5 * 0.5 * 0.5 *0.5
-    = 0.0625
+p(HTTH) = 0.5 * 0.5 * 0.5 *0.5\
+    = 0.0625\
+p(HHHH) = 0.5 * 0.5 * 0.5 *0.5\
+    = 0.0625\
+p(TTHH) = 0.5 * 0.5 * 0.5 *0.5\
+    = 0.0625\
 
 ## 2: If a list of people has 24 women and 21 men, then the probability of choosing a man from the list is 21/45. What is the probability of not choosing a man?
 
-p(M) = M / (M + W)
-    = 21 / 45
+p(M) = M / (M + W)\
+    = 21 / 45\
 p(!M) = 1 - p(M)
     = 1 - (21 / 45)
     = 24 / 45
