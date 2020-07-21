@@ -2,7 +2,7 @@
 
 ## 1: Calculate the probability of flipping a balanced coin four times and getting each pattern: HTTH, HHHH and TTHH.
 
-p(H) = 0.5
+p(H) = 0.5\
 p(T) = 0.5
 
 p(HTTH) = 0.5 * 0.5 * 0.5 *0.5
@@ -70,6 +70,6 @@ A:
         = 0.0996 * 100
         = 9.96% chance the test misclassifies any given person. 
             - Almost 10%. Definitely warrants a second test to validate. Since it's not too bad, a small number of multiple tests with matching results will becoming increasingly unlikely due to chance. 
-            
+
 
 
