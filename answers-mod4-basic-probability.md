@@ -34,8 +34,9 @@ A: This conclusion is based on a non-representative sample. The sample is conven
 
 ## Now it's time to use Bayes' rule to compute some conditional probabilities. First, look over the numbers and estimate each of the four probabilities, using your intuition. Then, calculate the probabilities using Bayes' rule. Keep track of your work in a Google document or markdown file that you can share with your mentor.
 
-##  A diagnostic test has a 98% probability of giving a positive result when applied to a person suffering from Thripshaw's Disease, and 10% probability of giving a (false) positive when applied to a non-sufferer. It is estimated that 0.5 % of the population are sufferers. Suppose that the test is now administered to a person whose disease status is unknown. Calculate the probability that the test will:
+##  A diagnostic test has a 98% probability of giving a positive result when applied to a person suffering from Thripshaw's Disease, and 10% probability of giving a (false) positive when applied to a non-sufferer. It is estimated that 0.5% of the population are sufferers. Suppose that the test is now administered to a person whose disease status is unknown. 
 
+## Calculate the probability that the test will:
 1. Be positive
 2. Correctly diagnose a sufferer of Thripshaw's
 3. Correctly identify a non-sufferer of Thripshaw's
@@ -45,6 +46,30 @@ A:
 1. Be positive
     Guess: 98% of 0.5% sufferers plus 10% of 95% non-sufferer false positives 
     = (.98 * 0.5%) + (.1 * 99.5%)
-    = 10.44%
+    = 10.44% probability of any test being positive
     
     Bayes: 
+2. Correctly diagnose a sufferer of Thripshaw's
+    Guess: 98% probability of test diagnosing 
+
+3. Correctly identify a non-sufferer of Thripshaw's
+    Guess: 
+        p(id_non_sufferer) = 1 - p(false_positive)
+        = 1 - 0.1
+        = 0.9
+        =90% probability of correctly identifying non-sufferer
+
+4. Misclassify the person
+    Guess(Revised after checking): 
+        p(misclassify) = 1 - ((p(true_positive) *
+            sufferer_proportion) + (p(true_negative) *
+            non_suff_proportion))
+        = 1 - ((0.98 * 0.005) + (0.9 * 0.995))
+            - previously used percentages, but must use decimals to use 1 - X principle
+            - 0.9 is `1 - 0.1', the inverse of the false positive rate
+        = 0.0996 * 100
+        = 9.96% chance the test misclassifies any given person. 
+            - Almost 10%. Definitely warrants a second test to validate. Since it's not too bad, a small number of multiple tests with matching results will becoming increasingly unlikely due to chance. 
+            
+
+
