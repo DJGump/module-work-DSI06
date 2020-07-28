@@ -5,16 +5,22 @@ SELECT
 	ROUND((ROUND(chlorides::DECIMAL, 2) * total_sulfur_dioxide) ^ (1.0/3.0), 2)
 FROM winequality_red;
 
--- SELECT
--- 	(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3)) - MIN((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3)))
--- 	/ (MAX(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3))) -
--- 	   MIN(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3))))
--- FROM winequality_red;
-
 SELECT
-	alcohol / MIN(alcohol)
-FROM winequality_red;
+	(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3)) - MIN((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3)))
+	/ (MAX(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3))) -
+	MIN(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3))))
+FROM winequality_red
+GROUP BY quality;
+
+SELECT *, 
+	
+
+
+SELECT alcohol, 
+	((alcohol - MIN(alcohol)) / (MAX(alcohol)-MIN(alcohol))) AS diff
+FROM winequality_red
+GROUP BY alcohol;
 	
 	
-SELECT "pH"
+SELECT *
 FROM winequality_red;

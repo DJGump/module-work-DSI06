@@ -8,7 +8,7 @@ WHERE (year BETWEEN 1987 AND 2005)
 	AND year != 1990
 	AND year != 2000;
 	
-SELECT make, model, (hwy + cty) / 2 as average_mpg
+SELECT make, model, (hwy + cty) / 2 AS average_mpg
 FROM vehicles;
 
 SELECT year, make, model, CONCAT(hwy, ' highway; ', cty, ' city.') AS mpg_info
