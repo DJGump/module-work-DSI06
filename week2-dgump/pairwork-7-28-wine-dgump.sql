@@ -8,7 +8,8 @@ FROM winequality_red;
 -- this is not so simple:
 -- SELECT
 -- 	(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3)) - MIN((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3)))
--- 	/ (MAX(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3))) -
+-- 	/ (MAX(
+((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3))) -
 -- 	MIN(((ROUND(alcohol, 2) * 0.4) +(ROUND(quality, 2)* 0.3) + (ROUND(residual_sugar, 2) * 0.3))))
 -- FROM winequality_red
 -- GROUP BY quality;
