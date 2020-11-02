@@ -1,0 +1,5 @@
+Questions About Time Series
+
+* Best way to set period for seasonal decomposition
+
+* How to interpret and handle auto correlation
