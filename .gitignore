@@ -9,8 +9,9 @@ __pycache__/
 # Custom files
 *.exe
 *.csv
-/week_15/pairwork/corpi/*
 
+/week_15/pairwork/corpi/*
+/week_16/assignments/data/*
 # Distribution / packaging
 .Python
 build/
